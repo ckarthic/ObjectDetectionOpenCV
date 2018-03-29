@@ -25,3 +25,9 @@ def create_bgtxt(imgfolder = 'NegFromAds/Patches'):
         line = imgfolder + "/" + img + "\n"
         with open('bg.txt','a') as f:
             f.write(line)
+            
+def create_infodata(imgfolder = 'Source/logo_orig'):
+    for img in os.listdir(imgfolder):
+        line = imgfolder + "/" + img + " 1 0 0 60 20\n"
+        with open('info_pos_orig.data','a') as f:
+            f.write(line)
