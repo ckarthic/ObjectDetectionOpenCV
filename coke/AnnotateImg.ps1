@@ -1,4 +1,4 @@
-﻿$datafile = 'info/info_neg.data'
+﻿$datafile = 'info/info_pos_square.data'
 $opencv_annotations = 'C:\Users\rithanya\Documents\Python\opencv-master\Build\opencv\build\x64\vc15\bin\opencv_annotation.exe'
 $folderpath = './Source'
 
