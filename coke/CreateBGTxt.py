@@ -31,3 +31,9 @@ def create_infodata(imgfolder = 'Source/logo_orig'):
         line = imgfolder + "/" + img + " 1 0 0 60 20\n"
         with open('info_pos_orig.data','a') as f:
             f.write(line)
+            
+def renamefiles(imgfolder):
+    for img in os.listdir(imgfolder)[:5]:
+        newimg = img.split(' ')[0] + 'jpg'
+        os.rename(imgfolder + '/' + img, newimg)
+        #print(img)
